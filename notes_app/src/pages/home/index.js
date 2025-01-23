@@ -1,12 +1,10 @@
 import { Navbar } from "../../components/Navbar";
 import { Sidebar } from "../../components/sidebar";
-import { Fragment } from "react";
-import { useEffect } from "react";
 import Notes from "../../components/notes_component";
 import { useNotes } from "../../contexts/notes_context";
 
 export const Home = () => {
-    const { text, title, notes,archive,deleted,notesdispatch } = useNotes();
+    const { text, title, notes,notesdispatch } = useNotes();
 
     const onTitlechange = (e) => {
         notesdispatch({

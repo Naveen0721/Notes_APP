@@ -1,5 +1,4 @@
 import {v4 as uuid} from 'uuid';
-import Archive from '../components/archive';
 
 export const Notesreducer=(state,action)=>
 {

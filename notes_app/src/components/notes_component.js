@@ -1,5 +1,4 @@
 import { useNotes } from "../contexts/notes_context"
-import Archive from "./archive"
 const Notes=({id,title,text,ispinned})=>
 {
     const {archive,deleted,important,notesdispatch}=useNotes()
@@ -58,7 +57,7 @@ const Notes=({id,title,text,ispinned})=>
     
   const isnotedeleted=findifnoteinbin(id,deleted)
   const isnotearchive=findifnoteinarchive(id,archive)
-  const isnoteimportant=findifnoteinbin(id,important)
+  const isnoteimportant=findifnoteinimportant(id,important)
   const delete_click=(id)=>
   {
     !isnotedeleted?notesdispatch(

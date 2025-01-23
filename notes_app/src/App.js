@@ -1,9 +1,7 @@
-import logo from './logo.svg';
+
 import './App.css';
-import { Routes,Router,Route } from 'react-router-dom';
-import { Navbar } from './components/Navbar';
+import { Routes,Route } from 'react-router-dom';
 import { Home } from './pages/home';
-import { Sidebar } from './components/sidebar';
 import Archive from './components/archive';
 import Bin from './Bin';
 import Important from './important';
